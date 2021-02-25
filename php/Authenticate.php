@@ -39,7 +39,7 @@
     if(!empty($_REQUEST["courses_id"])) $courses_id = $_REQUEST["courses_id"];
     $userData['courses_id'] = $courses_id;
 
-    $admins = array('ganderson','gpearl','wfelton','fstrong','alisonray','krettenmier','ltaylor',"gabrielgreenstein");
+    $admins = array('ganderson','gpearl','wfelton','fstrong','alisonray','krettenmier','ltaylor',"gabrielgreenstein", 'aldencutler');
         if(in_array($userData['user_id'], $admins)) {
                 setLocalStorage("isAdmin",true);
                $userData['isAdmin'] = true;
